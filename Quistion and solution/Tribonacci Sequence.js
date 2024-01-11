@@ -46,3 +46,18 @@ console.log(tribonacci([1, 0, 0], 10));
 // console.log([1, 1, 1].toString() == [1, 1, 1].toString());
 
 // -------------- Best Practice ------------>
+// #1
+// function tribonacci(signature,n){
+//   for (var i = 0; i < n-3; i++) { // iterate n times
+//     signature.push(signature[i] + signature[i+1] + signature[i+2]); // add last 3 array items and push to trib
+//   }
+//   return signature.slice(0, n); //return trib - length of n
+// }
+
+// #2
+// function tribonacci(arr, n) {
+//   if (n < 3) return arr.slice(0, n);
+//   return [arr[0]].concat(
+//     tribonacci([arr[1], arr[2], arr[0] + arr[1] + arr[2]], n - 1)
+//   );
+// }
