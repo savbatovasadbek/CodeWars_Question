@@ -19,7 +19,7 @@ If you enjoyed this kata more advanced and generalized version of it can be foun
 */
 
 function tribonacci(signature, n) {
-  if (n < 0) {
+  if (n <= 0) {
     return [];
   }
 
@@ -38,10 +38,11 @@ function tribonacci(signature, n) {
     }
     signature.push(nextNum);
   }
-
   return signature;
 }
 
-console.log(tribonacci([1, 0, 0], 10)); // Masala to'liq tugallanmagan ...
+console.log(tribonacci([1, 0, 0], 10));
 
 // console.log([1, 1, 1].toString() == [1, 1, 1].toString());
+
+// -------------- Best Practice ------------>

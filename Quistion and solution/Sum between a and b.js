@@ -28,7 +28,7 @@ function getSum(a, b) {
 
 console.log(getSum(5, 0));
 
-// ------ Best practice
+// ------ Best practice ---------->
 // #1
 // const GetSum = (a, b) => {
 //   let min = Math.min(a, b),
