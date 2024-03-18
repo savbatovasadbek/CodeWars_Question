@@ -49,3 +49,10 @@ function incrementString(strng) {
     return mixUp(strng, len, num);
   }
 }
+
+// best Solutions
+// #1
+// const incrementString = (s) => s.replace(/[0-8]?9*$/, (m) => String(++m));
+
+// #2
+// const incrementString = s => s.replace(/[0-8]?9*$/, m => ++m);
